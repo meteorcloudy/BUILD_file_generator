@@ -4,3 +4,5 @@ build --proto_toolchain_for_java="@com_google_protobuf//:java_toolchain"
 build --strategy=Scalac=worker
 test --strategy=Scalac=worker
 
+build --incompatible_remove_native_git_repository=true
+build --incompatible_remove_native_http_archive=true
